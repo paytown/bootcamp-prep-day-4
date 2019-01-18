@@ -9,15 +9,12 @@ function greet() {
     var firstName = firstNameInput.value;
     var lastName = lastNameInput.value;
     
-    console.log(firstName, lastName);
-
     // make the string of the greeting
     var greeting = 'Hello ' + firstName + ' ' + lastName + '!';
-    console.log(greeting);
 
     // display greeting
-
-    // remove prompt
+    var greeter = document.getElementById('greeter');
+    greeter.textContent = greeting;
 
 }
 
